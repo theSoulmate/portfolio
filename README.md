@@ -1,6 +1,3 @@
-# my-template
-Start template for new projects
-by Gulp
-09.10.2017
+# my portfolio site
 <br>
-gulp version < 3.9
+flexbox
