@@ -1,4 +1,10 @@
-var parallaxContainer = document.getElementById('parallax'),
+
+//Parallax
+$(window).on('load', function(){
+	$('.preloader').fadeOut(1500);
+})
+$(window).on('load', function(){
+	var parallaxContainer = document.getElementById('parallax'),
 	layers = parallaxContainer.children;
 
 var moveLayers = function(e) {
@@ -18,3 +24,7 @@ var moveLayers = function(e) {
 }
 
 window.addEventListener('mousemove', moveLayers);
+})
+
+
+

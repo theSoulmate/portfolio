@@ -4,7 +4,6 @@ const gulp = require('gulp'),
     browserSync = require('browser-sync').create(),
     uglify = require('gulp-uglify'),
     pump = require('pump'),
-    babel = require('gulp-babel'),
     concat = require('gulp-concat'),
     htmlMin = require('gulp-html-minifier'),
     cleaner = require('gulp-clean'),
@@ -78,9 +77,6 @@ gulp.task('compress-js', (cb) => {
     pump([
             gulp.src('app/js/main.js'),
             concat('main.min.js'),
-            babel({
-                presets: ['es2015']
-            }),
             uglify(),
             gulp.dest('app/js'),
             browserSync.stream()
