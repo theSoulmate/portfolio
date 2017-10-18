@@ -17,28 +17,16 @@
 
 @font-face {
     font-family:'BERNIER Regular';
-    src: url('../fonts/Bernier/BERNIERRegular-Regular.eot');
-	src: url('../fonts/Bernier/BERNIERRegular-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Bernier/BERNIERRegular-Regular.woff2') format('woff2'),
-		url('../fonts/Bernier/BERNIERRegular-Regular.woff') format('woff'),
-		url('../fonts/Bernier/BERNIERRegular-Regular.ttf') format('truetype'),
-		url('../fonts/Bernier/BERNIERRegular-Regular.otf') format('opentype'),
-		url('../fonts/Bernier/BERNIERRegular-Regular.svg#BERNIERRegular-Regular') format('svg');
+    src: url('../fonts/Bernier/BERNIERRegular-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
-    unicode-range: U+0020-00FE;
 }
 
 @font-face {
     font-family:'BERNIER Shade';
-    src: url('../fonts/Bernier/BERNIERShade-Regular.eot');
-	src: url('../fonts/Bernier/BERNIERShade-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/Bernier/BERNIERShade-Regular.woff2') format('woff2'),
-		url('../fonts/Bernier/BERNIERShade-Regular.woff') format('woff'),
-		url('../fonts/Bernier/BERNIERShade-Regular.ttf') format('truetype'),
-		url('../fonts/Bernier/BERNIERShade-Regular.otf') format('opentype'),
-		url('../fonts/Bernier/BERNIERShade-Regular.svg#BERNIERShade-Regular') format('svg');
+    src: url('../fonts/Bernier/BERNIERShade-Regular.otf') format('opentype');
+
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;

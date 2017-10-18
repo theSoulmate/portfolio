@@ -3,7 +3,7 @@
 $(window).on('load', function(){
 	$('.preloader').fadeOut(1500);
 })
-$(window).on('load', function(){
+
 	var parallaxContainer = document.getElementById('parallax'),
 	layers = parallaxContainer.children;
 
@@ -24,7 +24,11 @@ var moveLayers = function(e) {
 }
 
 window.addEventListener('mousemove', moveLayers);
-})
 
+
+$('.auth-btn__link').click(function(){
+	$('.flipper').toggleClass('flipper__rotate');
+	$('.front').toggleClass('front__hide');
+});
 
 

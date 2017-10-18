@@ -4,6 +4,9 @@
 	min-height: 100vh; 
 	position: relative;
 	overflow: hidden;
+	@include laptop {
+		display: none;
+	}
 }
 
 #parallax {
@@ -41,6 +44,11 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+	@include laptop {
+		background: url("../img/main-bg.png");
+		background-size: cover;
+		background-position: center center;
+	}
 }
 
 .top-line {
@@ -82,7 +90,40 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	
+}
+
+.flipper {
+	width: rem(380px);
+	height: rem(396px);
 	margin: 70px 0;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+}
+
+.flipper__rotate {
+	transform: rotateY(180deg);
+}
+
+.front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: 1s;
+}
+
+.front__hide {
+	opacity: 0;
+}
+
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
 }
 
 .auth__user {
@@ -105,6 +146,36 @@
 	color: $light-txt;
 	font-weight: 500;
 	margin-top: 10px;	
+}
+
+.auth__title {
+	font-family: 'BERNIER Regular';
+	font-weight: 400;
+	color: $light-txt;
+	font-size: rem(35px);
+	position: relative;
+}
+
+.auth__title:after {
+	content: "";
+	width: 20px;
+	height: 4px;
+	position: absolute;
+	background: $light-txt;
+	opacity: .2;
+	right: -40px;
+	top: 45%;
+}
+
+.auth__title:before {
+	content: "";
+	width: 20px;
+	height: 4px;
+	position: absolute;
+	background: $light-txt;
+	opacity: .2;
+	left: -40px;
+	top: 45%;
 }
 
 .user__desc {
